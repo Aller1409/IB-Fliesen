@@ -427,7 +427,7 @@ h2{font-weight:400;font-size:clamp(40px,4vw,60px);line-height:1.1;letter-spacing
     const card = filteredCards[photoIndex];
     const photo = $('#lightbox-image');
     photo.src = $('img', card).src;
-    photo.alt = $('img', card).alt + ' — KI-generiertes Konzeptbild';
+    photo.alt = $('img', card).
     photo.style.objectPosition = card.dataset.position;
     photo.style.transformOrigin = card.dataset.position;
     photo.style.transform = card.dataset.category === 'raum' ? 'scale(1)' : card.classList.contains('crop-shower') ? 'scale(1.45)' : 'scale(1.8)';
